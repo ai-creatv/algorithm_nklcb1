@@ -17,7 +17,7 @@
 
   - Programmers(함수 입출력)
 
-<https://programmers.co.kr/learn/courses/30/lessons/42576?language=python3>
+  <https://programmers.co.kr/learn/courses/30/lessons/42576?language=python3>
 
   ![파이썬_함수입출력](./img/2.png)
   
