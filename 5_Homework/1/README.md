@@ -20,4 +20,4 @@
 ## 제출 기한 및 방법
 
 - 본인 Repository에 소스코드 업로드 후, [Github issue 페이지](https://github.com/ai-creatv/algorithm_nklcb1/issues)에 링크 업로드
-- **3월 22일(일) 자정**까지 제출
+- **3월 22일(월) 자정**까지 제출
