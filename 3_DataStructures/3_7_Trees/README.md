@@ -50,8 +50,8 @@
 
 ### 이진 트리의 탐색 (Search)
 
-- 넓이 우선 탐색 (Breadth-First Search; BFS)
-![넓이 우선 탐색](img/8.png)
+- 너비 우선 탐색 (Breadth-First Search; BFS)
+![너비 우선 탐색](img/8.png)
 - 깊이 우선 탐색 (Depth-First Search; DFS)
 ![깊이 우선 탐색](img/9.png)
 
@@ -75,7 +75,7 @@
       1. 대칭 순회 (Inorder, Symmetric Traversal)
       1. 후위 순회 (Postorder)
     - 탐색 알고리즘: 탐색하여 Tree에 해당 `value`의 존재 여부를 판단한다.
-      1. 넓이 우선 탐색 (Breadth-First Search; BFS)
+      1. 너비 우선 탐색 (Breadth-First Search; BFS)
       1. 깊이 우선 탐색 (Depth-First Search; DFS)
 
 - **참조 코드**
@@ -94,7 +94,7 @@
       1. 대칭 순회 (Inorder, Symmetric Traversal)
       1. 후위 순회 (Postorder)
     - 탐색 알고리즘: 탐색하여 Tree에 해당 `value`의 존재 여부를 판단한다.
-      1. 넓이 우선 탐색 (Breadth-First Search; BFS)
+      1. 너비 우선 탐색 (Breadth-First Search; BFS)
       1. 깊이 우선 탐색 (Depth-First Search; DFS)
 
 - **참조 코드**
