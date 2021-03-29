@@ -132,21 +132,19 @@ class BinarySearchTree:
                 parent.right = node.left
 
         else:
-            last = node
+            prev = node
             curr = node.left
             
             while curr.right:
-                last = curr
+                prev = curr
                 curr = curr.right
             
-            if curr.left:
-                last.left = curr.left
-            
-            if last != node:
-                last.right = None
+            if prev != node:
+                prev.right = curr.left
+            else:
+                prev.left = curr.left
 
-            if node.left != curr:
-                curr.left = node.left
+            curr.left = node.left
             curr.right = node.right
             
             if parent is None:
