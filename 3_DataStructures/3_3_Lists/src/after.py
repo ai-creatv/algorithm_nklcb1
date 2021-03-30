@@ -46,8 +46,10 @@ class ArrayList:
         if self.capacity == self.length:
             self.capacity *= 2
             new_array = array.array('l', [0]*self.capacity)
-            for i in range(index, self.length):
+            for i in range(index):
                 new_array[i] = self.array[i]
+            for i in range(index, len(self.array)):
+                new_array[i + 1] = self.array[i]
             self.array = new_array
         else:
             for i in range(self.length - 1, index - 1, -1):

@@ -82,7 +82,7 @@ class BinarySearchTree:
     def insert(self, value):
         parent, node, direction = self.__search(value)
 
-        if parent is None:
+        if self.root is None:
             self.root = Node(value)
             return True
         
