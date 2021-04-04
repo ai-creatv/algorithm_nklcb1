@@ -43,7 +43,7 @@ def fibonacci(n):
     return res
 ```
 
-- 피보나치 수열의 반복적 구현 (Iterative Approach)
+- 피보나치 수열의 반복적 구현 (Bottom-Up Approach)
 
 ```python
 def fibonacci(n):
