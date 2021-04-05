@@ -78,6 +78,8 @@ def fibonacci(n):
   - 무게가 허용되지 않거나(w = 0), 짐을 하나도 고르지 않는 경우(i = -1)
   - `f(-1, x) = 0` 또는 `f(x, 0) = 0`
 
+- [BOJ 평범한 배낭 문제](https://www.acmicpc.net/problem/12865)
+
 ## [실습] 직사각형 퍼즐 문제
 
 - [프로그래머스 직사각형 퍼즐 문제](https://programmers.co.kr/learn/courses/30/lessons/12900)
