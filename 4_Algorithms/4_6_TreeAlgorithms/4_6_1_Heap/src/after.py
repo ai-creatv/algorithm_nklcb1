@@ -24,11 +24,13 @@ class MaxHeap:
 
     def pop(self):
         def need_swap(ind, child):
-            child
             if self.arr[child] > self.arr[ind]:
                 return True
             else:
                 return False
+        
+        def swap(ind0, ind1):
+            self.arr[ind0], self.arr[ind1] = self.arr[ind1], self.arr[ind0]
 
         if self.is_empty():
             return None
@@ -36,8 +38,8 @@ class MaxHeap:
         val = self.arr[1]
         self.arr[1] = self.arr[-1]
         del self.arr[-1]
-        curr = 1
 
+        curr = 1
         while curr < len(self.arr):
             left = curr * 2
             right = curr * 2 + 1
@@ -45,26 +47,20 @@ class MaxHeap:
             if left < len(self.arr) and right < len(self.arr):
                 if self.arr[left] > self.arr[right]:
                     if need_swap(curr, left):
-                        self.arr[curr], self.arr[left] = self.arr[left], self.arr[curr]
+                        swap(curr, left)
                         curr = left
                     else:
                         break
                 else:
                     if need_swap(curr, right):
-                        self.arr[curr], self.arr[right] = self.arr[right], self.arr[curr]
+                        swap(curr, right)
                         curr = right
                     else:
                         break
             elif left < len(self.arr):
                 if need_swap(curr, left):
-                    self.arr[curr], self.arr[left] = self.arr[left], self.arr[curr]
+                    swap(curr, left)
                     curr = left
-                else:
-                    break
-            elif right < len(self.arr):
-                if need_swap(curr, right):
-                    self.arr[curr], self.arr[right] = self.arr[right], self.arr[curr]
-                    curr = right
                 else:
                     break
             else:
