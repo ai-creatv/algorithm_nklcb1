@@ -1,4 +1,4 @@
-def kruskal(graph):
+def prim(graph):
     mst = []
     return mst
 
