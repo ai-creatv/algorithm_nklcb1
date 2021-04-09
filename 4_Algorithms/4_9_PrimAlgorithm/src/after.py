@@ -7,6 +7,7 @@ def prim(graph):
     connected = set()
 
     weights[0] = 0
+    connected.add(0)
     for node, weight in graph[0]:
         heapq.heappush(heap, (weight, 0, node))
 
@@ -14,7 +15,7 @@ def prim(graph):
     while heap:
         weight, a, b = heapq.heappop(heap)
 
-        if weights[b] <= weight or b in connected:
+        if (weights[b] <= weight) or (b in connected):
             continue
         
         weights[b] = weight
